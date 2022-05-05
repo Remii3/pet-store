@@ -1,0 +1,45 @@
+@import "../__globals.css";
+
+.pets-outer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.select-space {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px 0 5px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--mainGrey-border);
+}
+
+#sort-input,
+#status-input {
+  min-width: 100px;
+  min-width: 100px;
+  margin-right: 20px;
+  padding: 1px 2px;
+  border: 1px solid var(--mainGrey-border);
+  border-radius: 3px;
+  font-size: 0.9rem;
+  outline-width: 0;
+}
+
+@media (min-width: 1300px) {
+  .pets-outer {
+    min-width: 1300px;
+    max-width: 1300px;
+  }
+}
+@media (min-width: 910px) {
+  #sort-input {
+    margin-right: 0;
+  }
+
+  .select-space {
+    min-width: 910px;
+    width: 70%;
+  }
+}

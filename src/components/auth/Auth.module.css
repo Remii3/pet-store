@@ -1,0 +1,108 @@
+@import "../../__globals.css";
+
+.changeAuthMethod {
+  color: #00f;
+  cursor: pointer;
+}
+
+.auth-outer {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-spaceRegister {
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form-spaceLogin {
+  min-height: 147px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-spaceRegister div div,
+.form-spaceLogin div div {
+  min-height: 27px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.form-spaceRegister div input,
+.form-spaceLogin div input {
+  font-size: 1rem;
+  margin: 5px 5px 0 3px;
+  outline-width: 0;
+  border: 1.5px solid var(--mainGrey-border);
+  border-radius: 3px;
+  min-width: 210px;
+  max-width: 210px;
+}
+
+.form-spaceRegister .button-space,
+.form-spaceLogin .button-space {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchAccount-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.switchAccount-space p:nth-child(1) {
+  margin: 30px 0 0;
+}
+
+.button-space button:disabled {
+  background-color: var(--mainShadow-light);
+  border: 1px solid var(--mainShadow-light);
+  cursor: auto;
+}
+
+.invalidInput {
+  color: var(--mainRed-error);
+  margin: 5px 4px 0;
+  max-width: 280px;
+}
+
+.form-spaceRegister div .incorrect,
+.form-spaceLogin div .incorrect {
+  border-color: var(--mainRed-error);
+}
+
+@media (max-width: 380px) {
+  .form-spaceRegister div div,
+  .form-spaceLogin div div {
+    flex-direction: column;
+    min-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .form-spaceRegister div,
+  .form-spaceLogin div {
+    max-width: 230px;
+  }
+
+  .form-spaceRegister div input,
+  .form-spaceLogin div input {
+    font-size: 1.1rem;
+  }
+}

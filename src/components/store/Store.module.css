@@ -1,0 +1,57 @@
+.store-inner {
+  width: 100%;
+  min-height: 204px;
+}
+
+.titleSpace {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--mainGrey-border);
+}
+
+.data-space {
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  max-width: 850px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-space div {
+  display: flex;
+  min-width: 200px;
+  max-width: 200px;
+  border: 1px solid #999;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 1px 3px 5px var(--mainShadow-light);
+}
+
+.data-space div p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 14px 5px;
+  word-break: break-all;
+}
+
+.nameSpace {
+  width: 80%;
+}
+
+.valueSpace {
+  width: 20%;
+}
+
+@media (min-width: 520px) {
+  .data-space {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

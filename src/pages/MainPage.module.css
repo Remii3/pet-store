@@ -1,0 +1,14 @@
+.mainSection-outer {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.title-space {
+  padding: 0 20px;
+}
+
+.titleSpace h1 {
+  margin-left: 4px;
+}

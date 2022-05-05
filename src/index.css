@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  text-decoration: none;
+}
+
+input {
+  outline-width: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--mainShadow-light);
+}

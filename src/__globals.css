@@ -1,0 +1,17 @@
+:root {
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainGreen-light: #05ac72;
+  --secondaryGreen-light: #26cd93;
+  --secondaryGreen-dark: #048972;
+
+  --mainGrey-light: #999;
+  --secondaryGrey-dark: #555;
+
+  --mainRed-error: #e00;
+
+  --mainGrey-border: #777;
+
+  --mainShadow-light: rgba(0, 0, 0, 0.2);
+  --secondaryShadow-dark: rgba(0, 0, 0, 0.4);
+}

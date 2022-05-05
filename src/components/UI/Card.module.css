@@ -1,0 +1,13 @@
+@import "../../__globals.css";
+
+.home-card {
+  min-width: 200px;
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px var(--mainShadow-light);
+  transition: all 0.3s;
+}
+.home-card:hover {
+  transform: scale(1.1);
+}

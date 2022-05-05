@@ -1,0 +1,4 @@
+.main-section {
+  min-height: calc(100vh - 46px - 170px);
+  padding: 10px 0;
+}

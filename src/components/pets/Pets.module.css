@@ -1,0 +1,58 @@
+@import "../../__globals.css";
+
+.pets-inner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.petWindow {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.photo-container {
+  min-width: 100%;
+}
+
+.photo-container a img {
+  min-width: 100%;
+  max-width: 195px;
+  min-height: 100%;
+  max-height: 130px;
+  border-radius: 4px 4px 0 0;
+}
+
+.petWindow h3 {
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.petWindow p {
+  padding-left: 5px;
+  color: var(--secondaryGrey-dark);
+}
+
+.button-space {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 910px) {
+  .pets-inner {
+    min-width: 910px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 380px) {
+  .button-space {
+    flex-direction: column-reverse;
+  }
+}

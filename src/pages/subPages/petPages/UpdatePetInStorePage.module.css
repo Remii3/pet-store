@@ -1,0 +1,10 @@
+.updatePetInStore-outer {
+  min-height: 400px;
+  min-width: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

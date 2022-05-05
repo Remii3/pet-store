@@ -1,0 +1,19 @@
+@import "../../__globals.css";
+
+.tagButton {
+  margin: 0 0 0 5px;
+  min-width: 80px;
+  box-sizing: border-box;
+  background-color: var(--mainWhite);
+  border: 1px solid var(--mainGreen-light);
+  color: var(--mainGreen-light);
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.tagButton:hover {
+  background-color: var(--mainGreen-light);
+  color: var(--mainWhite);
+}

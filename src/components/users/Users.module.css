@@ -1,0 +1,120 @@
+@import "../../__globals.css";
+
+.user-inner {
+  width: 100%;
+  min-height: 204px;
+}
+
+.title-space {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-space {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-space div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-space div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-space div div input,
+.form-space div div label {
+  font-size: 1.1rem;
+  max-width: 200px;
+  margin: 2.5px 0;
+}
+
+.form-space div div label {
+  margin-left: 10px;
+}
+
+.form-space div div input {
+  border: 1px solid var(--mainGrey-border);
+  border-radius: 4px;
+}
+
+.form-space .button-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalidInput {
+  color: var(--mainRed-error);
+  margin: 5px 4px 0;
+  font-size: 14px;
+  padding-left: 1px;
+}
+
+.form-space div div .incorrect {
+  border-color: var(--mainRed-error);
+}
+
+.infoSpace {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.infoSpace .infoTitleSpace {
+  width: 100%;
+  border-bottom: 1px solid var(--mainGrey-light);
+}
+
+.infoSpace div {
+  width: 100%;
+}
+
+.infoSpace div p {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 680px) {
+  .infoSpace {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+
+  .infoSpace div {
+    width: 45%;
+  }
+}
+
+@media (min-width: 480px) {
+  .form-space {
+    margin: 0;
+  }
+  .form-space div div {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 320px;
+  }
+  .title-space {
+    justify-content: flex-start;
+  }
+  .invalidInput {
+    text-align: left;
+  }
+}

@@ -1,0 +1,26 @@
+@import "/src/__globals.css";
+
+.footer-outer {
+  min-height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.footer-outer div {
+  background-color: var(--mainGreen-light);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2px 0;
+  align-items: center;
+}
+.footer-outer div i {
+  padding: 4px;
+  color: var(--mainWhite);
+  border: 2px solid var(--secondaryGreen-dark);
+  border-radius: 50%;
+}

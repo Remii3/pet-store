@@ -1,0 +1,80 @@
+@import "../../__globals.css";
+
+.updateUser-inner {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 204px;
+}
+.titleSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-space div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 206px;
+  margin-top: 10px;
+}
+
+.form-space div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-space div div label,
+.form-space div div input {
+  font-size: 1.1rem;
+  max-width: 200px;
+  margin: 2.5px 0;
+}
+
+.form-space div div input {
+  border: 1px solid var(--mainGrey-border);
+  border-radius: 4px;
+}
+
+.form-space .button-space {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalidInput {
+  color: var(--mainRed-error);
+  margin: 5px 4px 0;
+  font-size: 14px;
+}
+.form-space div div .incorrect {
+  border-color: var(--mainRed-error);
+}
+
+@media (min-width: 960px) {
+  .form-space {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form-space div div {
+    flex-direction: row;
+    min-width: 320px;
+    justify-content: space-between;
+  }
+
+  .form-space div {
+    max-width: 400px;
+    align-items: flex-start;
+  }
+}

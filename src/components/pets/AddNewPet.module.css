@@ -1,0 +1,103 @@
+@import "../../__globals.css";
+
+.updatePetInfo-inner {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 204px;
+}
+
+.title-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-space div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-space div div input,
+.form-space div div label {
+  font-size: 1.1rem;
+  max-width: 200px;
+  margin: 2.5px 0;
+}
+
+.form-space div div input {
+  border: 1px solid var(--mainGrey-border);
+  border-radius: 4px;
+}
+
+.form-space div div.tags-space {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-space div div.tags-space input {
+  font-size: 1.1rem;
+  max-width: 200px;
+  margin: 2.5px 0;
+}
+
+.form-space div div .tags-space button {
+  max-width: 70px;
+}
+
+.form-space div .tags-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 428px;
+}
+
+.form-space div div .files-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-space .button-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalidInput {
+  color: var(--mainRed-error);
+  margin: 5px 4px 0;
+  font-size: 14px;
+}
+
+.form-space div div .incorrect {
+  border-color: var(--mainRed-error);
+}
+
+@media (min-width: 480px) {
+  .form-space div div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title-space {
+    justify-content: flex-start;
+  }
+
+  .form-space div div.tags-space {
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .form-space div div.tags-space input {
+    max-width: 140px;
+  }
+}

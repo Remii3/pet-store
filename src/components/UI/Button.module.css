@@ -1,0 +1,29 @@
+@import "../../__globals.css";
+
+.buttonStyle {
+  margin: 15px 15px 0;
+  min-width: 128px;
+  max-width: 128px;
+  font-size: 1.1rem;
+  color: var(--mainWhite);
+  background-color: var(--mainGreen-light);
+  border: none;
+  border-radius: 7px 7px 7px 0;
+  padding: 10px 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px var(--mainShadow-light);
+  transition: all 0.3s;
+}
+
+.buttonStyle:hover {
+  background-color: var(--secondaryGreen-light);
+  border-radius: 0;
+}
+
+.buttonStyle:disabled {
+  border-radius: 7px 7px 7px 0;
+
+  background-color: var(--mainShadow-light);
+  border: 1px solid var(--mainShadow-light);
+  cursor: auto;
+}
