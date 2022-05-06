@@ -43,9 +43,9 @@ function Pets(props) {
           <Card key={index} className="home-card">
             <div className={classes.petWindow}>
               <div className={classes["photo-container"]}>
-                {/* <Link to={`/Pets/${el.id}`}>
+                <Link to={`/Pets/${el.id}`}>
                   <img src={imgLink[randomImg]} alt="dog_photo" />
-                </Link> */}
+                </Link>
               </div>
               <h3>{el.name}</h3>
               <p>Status: {el.status}</p>
