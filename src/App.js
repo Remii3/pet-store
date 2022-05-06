@@ -31,8 +31,8 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<MainPage />} />
-            {
-              /* <Route path="/Pets/*" element={<PetsPage />} />
+
+            <Route path="/Pets/*" element={<PetsPage />} />
             <Route path="/Pets/:petId/*" element={<PetDetailsPage />} />
             <Route path="/Store" element={<StorePage />} />
             <Route path="/Users" element={<UsersPage />} />
@@ -61,9 +61,8 @@ function App() {
             <Route
               path="/Profile/UploadPetImage"
               element={<UploadPetImagePage />}
-            />*/
-              <Route path="/*" element={<Navigate to={"/"} replace />} />
-            }
+            />
+            <Route path="/*" element={<Navigate to={"/"} replace />} />
           </Routes>
         </Layout>
       </ContextProvider>
